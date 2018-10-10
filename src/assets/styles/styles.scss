@@ -1,0 +1,54 @@
+@import '~@angular/material/theming';
+@import 'nglp.scss';
+@import 'animation/nglp-animations.scss';
+
+/* ------ scroll off -------- */
+
+.scrollOff{
+	overflow: hidden !important;
+}
+
+/* ------ section -------- */
+
+section{
+	margin-top: 135px;
+	margin-bottom: 135px;
+}
+
+/* ------ icons -------- */
+
+.material-icons {
+  color: mat-color($nglp-accent, 700);
+}
+
+.text-muted{
+  color: mat-color($nglp-accent, A700);
+}
+
+/* ------ navigation -------- */
+
+.navigation-toolbar {
+  background-color: mat-color($nglp-primary);
+}
+
+/* ------ mobile logo -------- */
+
+#mobilelogo{
+  margin-top: 56px;
+}
+
+/* ------ about hover effect -------- */
+
+.about-hover-effect{
+  @include mat-elevation-transition;
+  @include mat-elevation(8);
+}
+
+.about-hover-effect .mat-card{
+  background-color: mat-color($nglp-accent, 100);
+}
+
+.about-hover-effect i{
+  color: mat-color($nglp-accent, A700);
+}
+

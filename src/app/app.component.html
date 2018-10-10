@@ -1,0 +1,41 @@
+<mat-toolbar class="navigation-toolbar" [class.navigation-is-mobile]="mobileQuery.matches" [class.mat-elevation-z0]="!isActive" [class.mat-elevation-z8]="isActive" [class.animated-header]="!isActivefadeInDown" [class.fadeInDown]="!isActivefadeInDown" [class.navigation-fixed]="!fixedTolbar">
+      <button fxShow="true" fxShow.gt-xs="false" mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+      <a class="logo" fxShow="false" fxShow.gt-xs="true" href="#"><img src="assets/img/logo.png"></a>
+      <mat-nav-list class="navigation-list" fxLayout="row" fxShow="false" fxShow.gt-xs="true">
+          <a mat-list-item href="#about">About</a>
+          <a mat-list-item href="#portfolio">Portfolio</a>
+          <a mat-list-item href="#pricing">Pricing</a>
+          <a mat-list-item href="#blog">Blog</a>
+          <a mat-list-item href="#contact">Contact</a>
+      </mat-nav-list>
+      <span class="navigation-spacer"></span>
+      <button id=contact-fab-button (click)="openDialog()" mat-mini-fab color="primary" matTooltip="Contact Us" [matTooltipPosition]="'left'"><mat-icon>email</mat-icon></button>
+    </mat-toolbar>
+
+    <div class="navigation-empty" fxShow="false" fxShow.gt-xs="true"></div>
+    
+    <mat-sidenav-container class="navigation-sidenav-container"
+                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+      <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                   [fixedInViewport]="mobileQuery.matches" (opened)="setToggleOn()" (closed)="setToggleOff()">
+        <mat-nav-list>
+          <a id="mobilelogo" class="logo" fxShow="true" fxShow.gt-xs="false" href="#"><img src="assets/img/logo.png"></a>
+          <a mat-list-item href="#about">About</a>
+          <a mat-list-item href="#portfolio">Portfolio</a>
+          <a mat-list-item href="#pricing">Pricing</a>
+          <a mat-list-item href="#blog">Blog</a>
+          <a mat-list-item href="#contact">Contact</a>
+        </mat-nav-list>
+      </mat-sidenav>
+
+      <mat-sidenav-content nglp-scroll (onScroll)="detectScroll($event)">
+
+      <app-heading></app-heading>
+      <app-about></app-about>
+      <app-portfolio></app-portfolio>
+      <app-pricing></app-pricing>
+      <app-blog></app-blog>
+      <app-contact></app-contact>
+
+      </mat-sidenav-content>
+    </mat-sidenav-container>

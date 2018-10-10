@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+}
+
+tr.mat-footer-row {
+  font-weight: bold;
+}
+
+.pricing-heading{
+  padding-bottom: 30px;
+}
+
+.pricing-heading h2{
+  font-size: 32px;
+}
+
+.pricing-heading h3{
+  font-size: 22px;
+}
+
+.pricing-section{
+  text-align: center;
+}

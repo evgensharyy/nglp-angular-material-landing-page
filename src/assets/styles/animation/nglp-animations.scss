@@ -1,0 +1,111 @@
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+
+@import 'animate.scss';
+
+@-moz-document url-prefix() {
+  .animated,
+  .animated * {
+    outline: 1px solid transparent;
+  }
+}
+
+.animated {
+  opacity: 0;
+}
+
+.animated-header {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* ------- fade -------- */
+
+
+.animated.fadeInLeft{
+  opacity: 1;
+}
+
+.animated.fadeInRight{
+  opacity: 1;
+}
+
+.animated.fadeIn{
+  opacity: 1;
+}
+
+.animated.fadeIn.heading-btn{
+ animation-delay: 1.5s;
+-webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  -moz-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  -o-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.animated.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.animated.fadeInLeft{
+-webkit-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -moz-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -o-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+}
+
+.animated.fadeInRight{
+-webkit-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -moz-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -o-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+}    
+
+/* ------- zoom -------- */
+
+.animated.zoomIn{
+  opacity: 1;
+}    
+
+.animated.zoomIn.about1 {
+  animation-delay: 0.1s;
+  -webkit-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -moz-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -o-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+}
+
+.animated.zoomIn.about2 {
+  animation-delay: 0.4s;
+  -webkit-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -moz-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -o-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+}
+
+.animated.zoomIn.about3 {
+  animation-delay: 0.7s;
+  -webkit-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -moz-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -o-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+}
+
+.animated.zoomIn.about4 {
+  animation-delay: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -moz-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  -o-animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+  animation-timing-function: cubic-bezier(0.51, 0.02, 0, 1.335);
+}
+
+
+
+
+

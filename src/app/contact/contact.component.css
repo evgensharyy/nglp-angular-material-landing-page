@@ -1,0 +1,26 @@
+.contact-section{
+  text-align: center;
+}
+
+.contact-heading{
+  padding-bottom: 30px;
+}
+
+.contact-heading h2{
+  font-size: 32px;
+}
+
+.contact-heading h3{
+  font-size: 22px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.contact-form > * {
+  width: 100%;
+}
