@@ -47,6 +47,6 @@ You can see additional [Angular CLI commands](https://github.com/angular/angular
 
 See [simplest deployment techniques](https://angular.io/guide/deployment) for deploying your Angular application to a remote server.
 
-## Documentation
+## Help Docs
 
-[NGLP Documentation](https://evgensharyy.github.io/nglp_doc/)
+[Help Documentations](https://evgensharyy.github.io/nglp_doc/#helpdocs)
