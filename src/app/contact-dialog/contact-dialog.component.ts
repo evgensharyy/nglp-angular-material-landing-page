@@ -20,7 +20,7 @@ export interface DialogData {
 @Component({
   selector: 'app-contact-dialog',
   templateUrl: './contact-dialog.component.html',
-  styleUrls: ['./contact-dialog.component.css']
+  styleUrls: ['./contact-dialog.component.scss']
 })
 export class ContactDialogComponent {
 

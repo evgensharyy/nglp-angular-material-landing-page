@@ -26,8 +26,6 @@
               "src/assets/styles/nglp.scss",
               "src/assets/styles/styles.scss",
               "node_modules/owl.carousel/dist/assets/owl.carousel.css"
-
-
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -130,5 +128,10 @@
       }
     }
   },
-  "defaultProject": "nglp"
+  "defaultProject": "nglp",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
